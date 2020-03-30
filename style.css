@@ -1,36 +1,9 @@
-*, :after, :before {
+* {
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
-	text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-tap-highlight-color: transparent;
 	outline: none;
-  border: none;
-}
-
-@font-face {
-	font-family: 'Fivo Thin';
-	font-style: normal;
-	font-weight: normal;
-	src: url('FivoSans/FivoSans-Thin.otf');
-}
-@font-face {
-	font-family: 'Fivo Reg';
-	font-style: normal;
-	font-weight: normal;
-	src: url('FivoSans/FivoSans-Regular.otf');
-}
-@font-face {
-	font-family: 'Fivo Heavy';
-	font-style: normal;
-	font-weight: normal;
-	src: url('FivoSans/FivoSans-Heavy.otf');
-}
-
-html::-webkit-scrollbar { 
-    display: none; 
+    border: none;
 }
 
 html, body {
@@ -40,7 +13,7 @@ html, body {
 
 body {
     color: #000;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
 }
 
 .menu {
@@ -82,7 +55,7 @@ body {
 
 .hoofd-pagina {
     height: calc(100% - 60px);
-    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpng.pngtree.com%2Fback_origin_pic%2F03%2F75%2F00%2F77f5aa5182f397f702648f64dc340ec1.jpg&f=1&nofb=1);
+    background-image: url(plaatjes/hoofd-achtergrond.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -154,7 +127,7 @@ body {
     min-height: calc(100vh - 60px);
 }
 
-.colofon-pagina {
+.colofon-pagina > .inhoud {
     padding: 0;
 }
 
