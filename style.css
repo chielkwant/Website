@@ -144,9 +144,9 @@ footer {
 
 .zijbalk {
     position: fixed;
-    top: 60px;
-    right: 0;
-    bottom: 0;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
     width: 25%;
     background: #fff;
     display: flex;
