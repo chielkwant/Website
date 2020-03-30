@@ -52,6 +52,13 @@ body {
     color: #000;
 }
 
+footer {
+    background: #344e34;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #8c7d6b;
+}
+
 .pagina {
     position: relative;
     min-height: calc(100% - 60px);
@@ -144,6 +151,7 @@ body {
     background: #fff;
     display: flex;
     align-items: center;
+    z-index: -1;
 }
 
 .zijbalk-navigatie {
