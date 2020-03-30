@@ -1,0 +1,230 @@
+*, :after, :before {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+	outline: none;
+  border: none;
+}
+
+@font-face {
+	font-family: 'Fivo Thin';
+	font-style: normal;
+	font-weight: normal;
+	src: url('FivoSans/FivoSans-Thin.otf');
+}
+@font-face {
+	font-family: 'Fivo Reg';
+	font-style: normal;
+	font-weight: normal;
+	src: url('FivoSans/FivoSans-Regular.otf');
+}
+@font-face {
+	font-family: 'Fivo Heavy';
+	font-style: normal;
+	font-weight: normal;
+	src: url('FivoSans/FivoSans-Heavy.otf');
+}
+
+html::-webkit-scrollbar { 
+    display: none; 
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    color: #000;
+    font-family: 'Poppins';
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    background: #344e34;
+}
+
+.menu-links,
+.menu-rechts {
+    display: flex;
+}
+
+.menu-links > img { 
+    height: 60px;
+    width: auto;
+    padding: 0 20px;
+}
+
+.menu-blok {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: all .4s cubic-bezier(0.14, 0.82, 0.25, 1);
+}
+
+.menu-blok:hover {
+    background: #ffb71d;
+    color: #000;
+}
+
+.pagina {
+    position: relative;
+    min-height: calc(100% - 60px);
+}
+
+.hoofd-pagina {
+    height: calc(100% - 60px);
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpng.pngtree.com%2Fback_origin_pic%2F03%2F75%2F00%2F77f5aa5182f397f702648f64dc340ec1.jpg&f=1&nofb=1);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.schaduw {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #00000070;
+    height: 100%;
+    width: 100%;
+}
+
+.boven-schaduw {
+    position: absolute;
+    top: 0;
+    left: 0;  
+}
+
+.tekst-blok {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.tekst-blok.klein {
+    height: 300px;
+}
+
+
+.tekst-blok-midden {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.tekst {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.knop-normaal {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    padding: 15px 30px;
+    background: #ffb71d;
+    color: #000;
+}
+
+.knop-normaal > svg {
+    margin-left: 10px;
+}
+
+.wit {
+    color: #fff;
+}
+
+/* wat is bier pagina */
+
+.wat-is-bier-pagina > .inhoud,
+.speciaal-bier-pagina > .inhoud,
+.colofon-pagina > .inhoud {
+    width: 75%;
+    background: #8c7d6b;
+    padding-top: 100px;
+    min-height: calc(100vh - 60px);
+}
+
+.colofon-pagina {
+    padding: 0;
+}
+
+.zijbalk {
+    position: fixed;
+    top: 60px;
+    right: 0;
+    bottom: 0;
+    width: 25%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.zijbalk-navigatie {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.zijbalk-navigatie > a {
+    display: flex;
+    align-items: center;
+    color: #000;
+    padding: 10px;
+}
+
+.fluid {
+    padding: 0 20px
+}
+
+.plaatjes-blok {
+    display: flex;
+    max-width: 100%;
+    padding: 30px;
+    background: #344e34;
+}
+
+.plaatje {
+    text-align: center;
+}
+
+.plaatje > img {
+    max-height: 100%;
+    height: 100%;
+    max-width: 100%;
+}
+
+.drie > .plaatje {
+    flex: 0 1 33.333333%;
+    overflow: hidden;
+    height: 300px;
+}
+
+.twee > .plaatje {
+    flex: 0 1 50%;
+    overflow: hidden;
+    height: 300px;
+}
+
+.een > .plaatje {
+    flex: 0 1 100%;
+    overflow: hidden;
+    height: 300px;
+}
+
+ul {
+    padding: 0 30px;
+}
+
+li {
+    list-style: square;
+    color: #fff;
+}
