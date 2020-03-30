@@ -59,6 +59,12 @@ footer {
     border-top: 1px solid #8c7d6b;
 }
 
+.menu, footer {
+    position: relative;
+    z-index: 1;
+    /* zodat navigatie blok onder menu en footer zit */
+}
+
 .pagina {
     position: relative;
     min-height: calc(100% - 60px);
@@ -151,7 +157,6 @@ footer {
     background: #fff;
     display: flex;
     align-items: center;
-    z-index: -1;
 }
 
 .zijbalk-navigatie {
